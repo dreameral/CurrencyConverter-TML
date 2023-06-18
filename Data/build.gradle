@@ -1,0 +1,6 @@
+plugins {
+    id 'common-config'
+}
+
+group 'com.tml'
+version '0.0.1-SNAPSHOT'

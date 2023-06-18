@@ -1,0 +1,9 @@
+plugins {
+    id 'common-config'
+    id 'spring-conventions'
+}
+
+dependencies {
+    implementation project(":Core")
+    implementation project(":Data")
+}
