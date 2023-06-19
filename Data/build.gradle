@@ -1,6 +1,11 @@
 plugins {
     id 'common-config'
+    id 'spring-conventions'
 }
 
 group 'com.tml'
 version '0.0.1-SNAPSHOT'
+
+dependencies {
+    implementation project(path: ':Core')
+}

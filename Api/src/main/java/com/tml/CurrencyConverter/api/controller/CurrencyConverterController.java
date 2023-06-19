@@ -8,9 +8,11 @@ import com.tml.CurrencyConverter.core.usecase.ConvertCurrencyUseCase;
 import com.tml.CurrencyConverter.core.usecase.UseCaseExecutor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.CompletableFuture;
 
+@RestController
 public class CurrencyConverterController {
 
     private final UseCaseExecutor useCaseExecutor;

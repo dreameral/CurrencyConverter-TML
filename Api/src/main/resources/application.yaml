@@ -1,0 +1,30 @@
+providers:
+  -
+    name: exchange
+    apiKey: bd855cb100c2b530e062ef0cb7c77071
+    baseApiUrl: http://api.exchangeratesapi.io/v1/
+    listRatesEndpoint: latest?access_key=%s&symbols=%s,%s
+    convertCurrencyEndpoint:
+    supportsConversion: false #free plan does not offer this service
+  -
+    name: fixer
+    apiKey: ae5e8a6e1706f580e44546d5d7b89d7b
+    baseApiUrl: http://data.fixer.io/api/
+    listRatesEndpoint: latest?access_key=%s&symbols=%s,%s
+    convertCurrencyEndpoint:
+    supportsConversion: false #free plan does not offer this service
+  -
+    name: currencyLayer
+    apiKey: e8848410cafeb63b09450978a1c026a8
+    baseApiUrl: http://api.currencylayer.com/
+    listRatesEndpoint: live?access_key=%s&currencies=%s,%s
+    convertCurrencyEndpoint:
+    supportsConversion: false #free plan does not offer this service
+  -
+    name: forex #could not activate api_key, didn't receive a verification email
+    apiKey:
+    baseApiUrl:
+    listRatesEndpoint:
+    convertCurrencyEndpoint:
+
+provider: currencyLayer
